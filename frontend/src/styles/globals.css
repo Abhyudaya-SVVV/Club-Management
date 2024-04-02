@@ -15,7 +15,11 @@ body {
   background-color: rgb(255, 255, 255);
 }
 
+.mainpage{
+  width: 90%;
+  margin: 0 auto;
+}
 ::selection {
-  background-color: #9b00fb3b; 
-  color: rgb(255, 255, 255); 
+  background-color: #70aed13b; 
+  color: rgb(0, 0, 0); 
 }
