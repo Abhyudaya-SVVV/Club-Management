@@ -1,6 +1,7 @@
 import React from 'react'
 import Head from 'next/head'
 import Addtask from '@/Components/Addtask'
+import Asigntask from '@/Components/Asigntask'
 
 const index = () => {
   return (
@@ -11,8 +12,9 @@ const index = () => {
           <meta name="description" content="Your website description" />
           <link rel="stylesheet" href="/styles.css" />
       </Head>
-      <main>
+      <main style={{display:'flex'}}>
         <Addtask/>
+        <Asigntask/>
       </main>
     </>
   )
