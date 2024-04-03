@@ -1,5 +1,6 @@
 import React from 'react'
 import Head from 'next/head'
+import Addtask from '@/Components/Addtask'
 
 const index = () => {
   return (
@@ -11,7 +12,7 @@ const index = () => {
           <link rel="stylesheet" href="/styles.css" />
       </Head>
       <main>
-        
+        <Addtask/>
       </main>
     </>
   )
