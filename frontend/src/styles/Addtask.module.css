@@ -1,145 +1,261 @@
 .addTask {
+
     margin-top: 20px;
+    
     width: 30%;
+    
     min-width: 300px;
+    
     height: 450px;
+    
     border-radius: 8px;
+    
     padding: 1rem 1.5rem;
+    
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.13);
+    
     background-color: #fff;
-  }
-  
-  .cross {
+    
+    }
+    
+    .cross {
+    
     margin-left: 98%;
+    
     opacity: 0.7;
-  }
-  
-  .subject {
+    
+    }
+    
+    .subject {
+    
     outline: none;
+    
     width: 80%;
+    
     margin-bottom: 0.7rem;
+    
     color: black;
+    
     font-size: 1.3rem;
-  }
-  
-  .addTask textarea {
+    
+    }
+    
+    .addTask textarea {
+    
     width: 100%;
+    
     height: 150px;
+    
     margin-top: 0.2rem;
+    
     border: 2px solid #3b83f6c9;
+    
     box-shadow: 0 0 15px 0 rgba(86, 72, 217, 0.3);
+    
     border-radius: 8px;
+    
     padding: 10px;
+    
     outline: none;
+    
     resize: none;
+    
     font-size: 1.1rem;
-  }
-  
-  .tag {
+    
+    }
+    
+    .tag {
+    
     display: flex;
+    
     align-items: center;
+    
     padding: 10px;
+    
     height: 50px;
+    
     position: relative;
+    
     margin-top: 10px;
+    
     margin-bottom: 20px;
-  }
-  .addtag {
+    
+    }
+    
+    .addtag {
+    
     position: relative;
+    
     margin-left: 15px;
+    
     transform: scale(0.9);
+    
     font-size: 1.1rem;
-  }
-  .tag .dropdown-menu {
+    
+    }
+    
+    .tag .dropdown-menu {
+    
     display: none;
+    
     position: absolute;
+    
     top: -50px;
+    
     left: calc(100%);
+    
     width: 100%;
+    
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
     border-radius: 5px;
-  }
-  
-  .addtag:hover .dropdown-menu {
+    
+    }
+    
+    .addtag:hover .dropdown-menu {
+    
     display: block;
-  }
-  
-  .personIcon {
+    
+    }
+    
+    .personIcon {
+    
     height: 30px;
+    
     width: 25px;
+    
     opacity: 0.7;
-  }
-  .fatag {
+    
+    }
+    
+    .fatag {
+    
     margin-left: 03px;
+    
     height: 30px;
+    
     width: 30px;
+    
     margin-right: 20px;
+    
     opacity: 0.7;
-  }
-  .tag input{
+    
+    }
+    
+    .tag input{
+    
     outline: none;
+    
     background-color: #CEECFD;
+    
     border: 1px solid #CEECFD;
+    
     border-radius: 25px;
+    
     color: #059af0;
-    padding: 0.5rem 1rem; 
+    
+    padding: 0.5rem 1rem;
+    
     box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.13);
-  }
-  
-  .member {
+    
+    }
+    
+    .member {
+    
     display: flex;
+    
     align-items: center;
+    
     justify-content: space-between;
+    
     padding: 10px;
+    
     height: 50px;
-  }
-  
-  .personIcon {
+    
+    }
+    
+    .personIcon {
+    
     height: 30px;
+    
     width: 25px;
+    
     transform: scale(1.2);
+    
     opacity: 0.7;
-  }
-  
-  .selectMember {
+    
+    }
+    
+    .selectMember {
+    
     position: relative;
+    
     left: 40px;
+    
     display: flex;
+    
     justify-content: center;
+    
     align-items: center;
+    
     gap: 1rem;
+    
     align-items: center;
+    
     width: 70%;
+    
     margin-left: -5px;
-  }
-  
-  .dropdown-menu {
+    
+    }
+    
+    .dropdown-menu {
+    
     display: none;
+    
     position: absolute;
+    
     left: calc(100%);
+    
     width: 100%;
+    
     background-color: #fff;
+    
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    
     border-radius: 5px;
-  }
-  
-  .selectMember:hover .dropdown-menu {
+    
+    }
+    
+    .selectMember:hover .dropdown-menu {
+    
     display: block;
-  }
-  
-  .addTask button {
+    
+    }
+    
+    .addTask button {
+    
     align-self: center;
+    
     margin: 1.5rem auto;
+    
     height: 2.5rem;
+    
     width: 100%;
+    
     background-color: #3b82f6;
+    
     color: #fff;
+    
     border: none;
+    
     border-radius: 5px;
+    
     cursor: pointer;
-  }
-  
-  .addTask button:hover {
+    
+    }
+    
+    .addTask button:hover {
+    
     background-color: #2563eb;
-  }
-  
+    
+    }

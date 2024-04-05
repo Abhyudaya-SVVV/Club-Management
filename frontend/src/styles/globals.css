@@ -23,3 +23,52 @@ body {
   background-color: #70aed13b; 
   color: rgb(0, 0, 0); 
 }
+
+/* CSS for perticular checkbox  */
+.checkbox {
+
+  width: 24px;
+  
+  height: 24px;
+  
+  border-radius: 50%;
+  
+  border: 2px solid #ccc;
+  
+  appearance: none;
+  
+  -webkit-appearance: none;
+  
+  outline: none;
+  
+  cursor: pointer;
+  
+  position: relative;
+  
+  border-color: #2195f38c;
+  
+  }
+  
+  .checkbox:checked {
+  
+  background-color: #2196f3;
+  
+  }
+  
+  .checkbox:checked:after {
+  
+  content: "✔";
+  
+  font-size: 16px;
+  
+  color: white;
+  
+  position: absolute;
+  
+  top: 50%;
+  
+  left: 50%;
+  
+  transform: translate(-50%, -50%);
+  
+  }
