@@ -5,6 +5,7 @@ import Asigntask from '@/Components/Asigntask'
 import Tasks from '@/Components/Tasks'
 import Labels from '@/Components/Labels'
 import Projectcard from '@/Components/Projectcard'
+import Taskprogress from '@/Components/Taskprogress'
 
 const index = () => {
   return (
@@ -21,6 +22,7 @@ const index = () => {
         <Tasks/>
         <Labels/>
         <Projectcard/>
+        <Taskprogress/>
       </main>
     </>
   )
