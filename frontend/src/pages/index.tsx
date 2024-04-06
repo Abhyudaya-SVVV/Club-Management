@@ -6,6 +6,7 @@ import Tasks from '@/Components/Tasks'
 import Labels from '@/Components/Labels'
 import Projectcard from '@/Components/Projectcard'
 import Taskprogress from '@/Components/Taskprogress'
+import Usercard from '@/Components/Usercard'
 
 const index = () => {
   return (
@@ -23,6 +24,7 @@ const index = () => {
         <Labels/>
         <Projectcard/>
         <Taskprogress/>
+        <Usercard/>
       </main>
     </>
   )
