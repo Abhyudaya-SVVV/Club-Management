@@ -48,7 +48,6 @@ const Addtask = () => {
         e.preventDefault();
 
         console.log("Task created:", { subject, details, label, selectedMember });
-        // Reset form fields after submission
         handleResetForm();
     };
     return (

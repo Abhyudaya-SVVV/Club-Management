@@ -2,8 +2,14 @@ import React, { useState } from 'react';
 import { FiSearch, FiMenu, FiChevronDown } from 'react-icons/fi';
 
 type DropdownName = 'dashboard' | 'settings';
+type MobileDropdownProps = {
+  isOpen: boolean;
+  title?: string;
+  children: React.ReactNode;
+  onClose:boolean;
+};
 
-const MobileDropdown = ({ isOpen, title, children }) => {
+const MobileDropdown = ({ isOpen, title, children }:MobileDropdownProps) => {
   return (
     <div className={`${isOpen ? 'block' : 'hidden'}`}>
       <div className="pl-4">
@@ -13,10 +19,10 @@ const MobileDropdown = ({ isOpen, title, children }) => {
   );
 };
 
-const MobileMenu = ({ isOpen, onClose }) => {
+const MobileMenu = ({ isOpen, onClose }:MobileDropdownProps) => {
   const [isDropdownOpen, setIsDropdownOpen] = useState({ dashboard: false, settings: false });
 
-  const toggleDropdown = (dropdown) => {
+  const toggleDropdown = (dropdown:DropdownName) => {
     setIsDropdownOpen((prevState) => ({
       ...prevState,
       [dropdown]: !prevState[dropdown],
