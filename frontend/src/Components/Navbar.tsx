@@ -85,6 +85,7 @@ const Navbar = () => {
   });
 
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isLoggedIn, setIsLoggedIn] = useState(false); 
 
   const handleMouseEnter = (dropdown: DropdownName) => {
     setIsHovering({ ...isHovering, [dropdown]: true });
