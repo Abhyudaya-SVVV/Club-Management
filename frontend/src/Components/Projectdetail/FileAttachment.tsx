@@ -15,7 +15,7 @@ const FileAttachment = () => {
                 </div>
 
                 <div className='flex items-center justify-between px-8 pt-5'>
-                    <FaFilePdf className='opacity-80' size={35}/>
+                    <FaFilePdf className='opacity-80' size={35} color={'#46BD84'} value={{color:'blue'}}/>
                     <p className='text-xs font-semibold'>Project SRS.pdf</p>
                     <p className='text-xs font-light'>4.5MB</p>
                     <button className='text-xs text-violet-500'>Download</button>
