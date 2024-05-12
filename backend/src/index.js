@@ -5,11 +5,11 @@ dotenv.config({
 import mongoose from "mongoose"
 import app from './app.js'
 
-const DB_NAME = "cards"
+const DB_NAME = "Cards"
 
 const connectDB = async ()=>{
     try {
-        const connectionIntance = await mongoose.connect(`${process.env.MONGO_URL}/${DB_NAME}`);
+        const connectionIntance = await mongoose.connect(`${process.env.MONGODB_URL}/${DB_NAME}`);
         console.log(`Mongo Connnect !!!!`);
     } catch (error) {
         console.log("Mongo not connect !!",error);

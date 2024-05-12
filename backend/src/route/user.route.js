@@ -1,12 +1,14 @@
 import { Router } from "express";
 import {
-    createCard,
-    searchMember
+    registerUser,
+    login,
+    logOut
 } from "../controller/user.controller.js"
 
 const router = Router()
 
-router.route("/createCard").get(createCard)
-router.route("/:member").post(searchMember)
+router.route("/registerUser").post(registerUser)
+router.route("/login").post(login)
+router.route("/logOut").post(logOut)
 
 export default router;
