@@ -2,6 +2,7 @@ import { asyncHandler } from "../utils/AsyncHandler.js";
 import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { User } from "../model/user.model.js";
+
 const registerUser = asyncHandler(async (req, res) => {
     const { fullName, email, username, password, phoneNumber, type } = req.body;
 
@@ -100,8 +101,6 @@ const logOut = asyncHandler(async(req,res)=>{
         throw new ApiError(500, error?.message ||  "Internal sevrer erorr not able to logged out")
     }
 })
-
-
 
 export { 
     registerUser,
