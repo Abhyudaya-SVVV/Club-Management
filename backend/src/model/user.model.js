@@ -19,6 +19,13 @@ const userSchema = new mongoose.Schema({
     },
     phoneNumber: {
         type: String, 
+        validate: {
+            validator: function(v) {
+                // Check if the phone number contains at least 10 digits
+                return /^\d{10,}$/.test(v);
+            },
+            message: props => `${props.value} is not a valid phone number. It should contain at least 10 digits.`
+        },
         required: true,
         unique: true 
     },
@@ -30,6 +37,10 @@ const userSchema = new mongoose.Schema({
         type: String, 
         enum: ['admin', 'member'],
         required: true 
+    },
+    isCurrentlyAss:{
+        type: Boolean,
+        default: false
     }
 });
 

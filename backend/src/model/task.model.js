@@ -30,7 +30,8 @@ const taskSchema = new mongoose.Schema({
         required: true
     },
     progress: { 
-        type: Number, min: 0, max: 100 
+        type: Number, min: 0, max: 100 ,
+        default: 0
     }
 });
 
