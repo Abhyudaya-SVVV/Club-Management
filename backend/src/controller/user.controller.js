@@ -41,7 +41,7 @@ const registerUser = asyncHandler(async (req, res) => {
             new ApiResponse(200, createdUser, "User registered Successfully")
         )
     } catch (error) {
-        throw new ApiError(500, error?.message ||  "Internal sevrer erorr not able to Register ")
+        throw new ApiError(500, error?.message ||  "Internal server erorr not able to Register ")
     }
 })
 
@@ -100,8 +100,6 @@ const logOut = asyncHandler(async(req,res)=>{
         throw new ApiError(500, error?.message ||  "Internal sevrer erorr not able to logged out")
     }
 })
-
-
 
 export { 
     registerUser,

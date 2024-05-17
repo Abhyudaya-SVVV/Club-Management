@@ -16,10 +16,10 @@ const taskSchema = new mongoose.Schema({
         enum: ['Pending', 'In Progress', 'Completed'], 
         default: 'Pending' 
     },
-    assignedTo: { 
+    assignedTo: [{ 
         type: mongoose.Schema.Types.ObjectId, 
         ref: 'User', 
-        required: true },
+        required: true }], //made this array so that multiple person could be ass..
     createdBy: { 
         type: mongoose.Schema.Types.ObjectId, 
         ref: 'User', 
@@ -30,7 +30,8 @@ const taskSchema = new mongoose.Schema({
         required: true
     },
     progress: { 
-        type: Number, min: 0, max: 100 
+        type: Number, min: 0, max: 100 ,
+        default: 0
     }
 });
 

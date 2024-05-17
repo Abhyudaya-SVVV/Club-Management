@@ -13,7 +13,8 @@ app.use(cookieParser())
 
 
 import userRoutes from "./route/user.route.js"
-
+import taskRoutes from "./route/task.route.js"
 app.use("/api/v1/users",userRoutes)
+app.use("/api/v1/user/cards",taskRoutes)
 
 export default app;
