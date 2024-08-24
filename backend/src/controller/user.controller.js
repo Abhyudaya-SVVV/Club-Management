@@ -2,7 +2,6 @@ import { asyncHandler } from "../utils/AsyncHandler.js";
 import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { User } from "../model/user.model.js";
-
 const registerUser = asyncHandler(async (req, res) => {
     const { fullName, email, username, password, phoneNumber, type } = req.body;
 
@@ -42,7 +41,7 @@ const registerUser = asyncHandler(async (req, res) => {
             new ApiResponse(200, createdUser, "User registered Successfully")
         )
     } catch (error) {
-        throw new ApiError(500, error?.message ||  "Internal sevrer erorr not able to Register ")
+        throw new ApiError(500, error?.message ||  "Internal server erorr not able to Register ")
     }
 })
 
@@ -90,17 +89,19 @@ const login = asyncHandler(async (req, res) => {
 
 })
 
-const logOut = asyncHandler(async(req,res)=>{
-    try {
-        return res
-        .status(200)
-        .json(
-            new ApiResponse(200,null,"Logged Out Successfully")
-        )
-    } catch (error) {
-        throw new ApiError(500, error?.message ||  "Internal sevrer erorr not able to logged out")
-    }
-})
+// const logOut = asyncHandler(async(req,res)=>{
+//     try {
+
+//         return res
+//         .status(200)
+//         .json(
+//             new ApiResponse(200,null,"Logged Out Successfully")
+//         )
+//     } catch (error) {
+//         throw new ApiError(500, error?.message ||  "Internal sevrer erorr not able to logged out")
+//     }
+// })
+
 
 export { 
     registerUser,

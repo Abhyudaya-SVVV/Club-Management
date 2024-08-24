@@ -15,6 +15,7 @@ const connectDB = async ()=>{
         console.log("Mongo not connect !!",error);
         process.exit(1)
     }
+    
 }
 
 connectDB()
